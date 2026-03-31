@@ -20,10 +20,29 @@
         </p>
         <div class="hero-actions">
             <a href="{{ url_for('register') }}" class="btn-black">Create free account</a>
-            <a href="{{ url_for('login') }}" class="btn-black">See how it works</a>
+            <button type="button" class="btn-black" id="how-it-works-btn">See how it works</button>
         </div>
     </div>
 </section>
+
+<!-- Video Modal -->
+<div class="modal-overlay" id="video-modal">
+    <div class="modal-container">
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="modal-video">
+            <iframe id="modal-iframe"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
 
 <section class="app-showcase">
     <div class="app-preview">
